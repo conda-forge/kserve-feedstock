@@ -1,4 +1,4 @@
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: kserve
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/k/kserve/kserve-{{ version }}.tar.gz
-    sha256: 31babe50989fee8dd375277da795136269ca76210cce17c23366a31dddb5a6a4
+    sha256: b8db3fdf7325f56b808b0bb75b0f9ab3a67002385e74c35822ec8d9d96d69831
   - url: https://raw.githubusercontent.com/kserve/kserve/refs/tags/v{{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     fn: LICENSE-kserve.txt
