@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `kserve` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install kserve
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install kserve
 ```
 
-It is possible to list all of the versions of `kserve` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add kserve
+# for installing globally
+pixi global install kserve
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `kserve` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search kserve --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search kserve --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search kserve --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds kserve --channel conda-forge
 # List dependencies of `kserve`:
 mamba repoquery depends kserve --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
